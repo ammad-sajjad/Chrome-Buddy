@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Desktop Pet Buddy</title>
+    <style>
+      body {
+        width: 240px;
+        margin: 0;
+        padding: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: linear-gradient(160deg, #fff5e6, #ffe4c4);
+        color: #4a2c14;
+      }
+      h1 {
+        font-size: 16px;
+        margin: 0 0 4px;
+        text-align: center;
+      }
+      p {
+        font-size: 11px;
+        text-align: center;
+        margin: 0 0 14px;
+        color: #8b6f47;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+      button {
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background: white;
+        color: #4a2c14;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        transition: transform 0.15s, box-shadow 0.15s;
+      }
+      button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+      }
+      button:active { transform: translateY(0); }
+      .hint {
+        margin-top: 12px;
+        font-size: 10px;
+        text-align: center;
+        color: #a08060;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🐾 Pet Buddy</h1>
+    <p>Take care of your buddy</p>
+    <div class="grid">
+      <button data-action="feed">🍖 Feed</button>
+      <button data-action="play">🎾 Play</button>
+      <button data-action="pet">✋ Pet</button>
+      <button data-action="sleep">😴 Sleep</button>
+    </div>
+    <p class="hint">Click your pet on any webpage!</p>
+    <script src="popup.js"></script>
+  </body>
+</html>

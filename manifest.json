@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Desktop Pet Buddy",
+  "version": "1.0.0",
+  "description": "A cute floating pet companion that lives at the bottom of every webpage. Click, feed, and play with it!",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["pet.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["pet1.png","pet2.png","pet3.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
