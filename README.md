@@ -105,6 +105,8 @@ The extension uses a **Manifest V3** content script (`content.js`) that injects 
 
 ---
 
-## 📜 License
+## Don't forget to :star: the repository.
 
-MIT — do whatever you like with it. If you make something cool, feel free to share!
+## Support ❤️
+For support, you can contact me at this [Email](ammadsajjad40@gmail.com) or at [Instagram](https://www.instagram.com/ammad__sajjad_/).
+
